@@ -58,7 +58,7 @@
       async function scanCode() {
         const liff = window.liff;
         const result = await liff.scanCode();
-        document.getElementById("btnScanCode").src = result.value;
+        document.getElementById("scanCode").append(result.value);
       }
 
       function openWindow() {}
