@@ -8,11 +8,6 @@
     />
     <title>My LIFF app</title>
     <link rel="stylesheet" href="css/style.css" media="all" />
-    <script
-      charset="utf-8"
-      src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"
-    ></script>
-    <script src="liff-starter.js"></script>
   </head>
   <body>
     <p id="os"><b>OS:</b></p>
@@ -44,13 +39,13 @@
     <button id="btnLogOut" onclick="logOut()">Log Out</button>
     <button id="btnClose" onclick="closed()">Close</button>
 
-    <!-- <script src="js/vconsole.min.js"></script> -->
+    <script src="js/vconsole.min.js"></script>
     <!-- <script>
     var vConsole = new VConsole()
     console.log("Hello World!")
   </script> -->
 
-    <!-- <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script> -->
+    <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
     <script>
       function createUniversalLink() {}
 
@@ -60,7 +55,10 @@
 
       function closed() {}
 
-      async function scanCode() {}
+      async function scanCode() {
+        const liff = window.liff;
+        const scanCode =
+      }
 
       function openWindow() {}
 
